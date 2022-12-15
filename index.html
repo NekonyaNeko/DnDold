@@ -33,7 +33,7 @@
             }
 
             .quoi {
-                margin-left: 610px;
+                text-align: center;
             }
 
             .DnDlogo {
@@ -59,11 +59,11 @@
             }
 
             .personage {
-                margin-left: 658px;
+                text-align: center;
             }
 
             .Nom {
-                margin-right: 100px;
+                margin-right: 50px;
                 text-align: center;
             }
 
@@ -85,11 +85,11 @@
 
             .th {
                 width: 1200px;
-                height: 800px;
+                height: 850px;
             }
 
             .ou {
-                margin-left: 685px;
+                text-align: center;
             }
 
             .story {
@@ -98,7 +98,7 @@
 
             .menubutton {
                 display: inline-block;
-                margin-left: 545px;
+                margin-left: 500px;
             }
 
             .Session {
@@ -112,6 +112,26 @@
             .Sessiontxt {
                 text-align: center;
                 width: 1200px;
+                margin-left: 100px;
+            }
+
+            .Roll {
+
+                text-align: center;
+            }
+
+            .random {
+
+                display: inline-block;
+            }
+
+            .randomp {
+
+                margin-left: 12px;
+            }
+
+            .rollbutton {
+
                 margin-left: 100px;
             }
         </style> 
@@ -147,7 +167,7 @@
             <a href="#anchor-point2">
 
                 <button>
-                    Personage
+                    Roll
                 </button>
 
             </a>
@@ -155,12 +175,28 @@
             <a href="#anchor-point3">
 
                 <button>
+                    Personage
+                </button>
+
+            </a>
+
+            <a href="#anchor-point4">
+
+                <button>
+                    Où ?
+                </button>
+
+            </a>
+
+            <a href="#anchor-point5">
+
+                <button>
                     Histoire
                 </button>
     
             </a>
 
-            <a href="#anchor-point4">
+            <a href="#anchor-point6">
 
                 <button> 
                     Source
@@ -173,7 +209,7 @@
             <a name="anchor-point1">
 
                 <h2 class="quoi">
-                    qu'est que le D&D ?
+                    qu'est que le D&D?
                 </h2>
 
             </a>
@@ -184,11 +220,131 @@
 
         <a name="anchor-point2">
 
+            <h2 class="Roll">
+                Roll
+            </h2>
+
+        </a>
+
+        <a class="rollbutton">
+
+        <a class="random">
+
+            <p class="randomp" id="1">
+
+            </p>
+
+            <button id="b" onclick="random1();">
+                D3
+            </button>
+
+        </a>
+
+        <a class="random">
+
+            <p class="randomp" id="2">
+    
+            </p>
+    
+            <button id="b" onclick="random2();">
+                D4
+            </button>
+    
+        </a>
+
+        <a class="random">
+
+            <p class="randomp" id="3">
+    
+            </p>
+    
+            <button id="b" onclick="random3();">
+                D6
+            </button>
+    
+        </a>
+
+        </a>
+
+            <a class="random">
+
+            <p class="randomp" id="4">
+
+            </p>
+
+            <button id="b" onclick="random4();">
+                D8
+            </button>
+
+        </a>
+
+        <a class="random">
+
+            <p class="randomp" id="5">
+    
+            </p>
+    
+            <button id="b" onclick="random5();">
+                D10
+            </button>
+    
+        </a>
+
+        <a class="random">
+
+            <p class="randomp" id="6">
+    
+            </p>
+    
+            <button id="b" onclick="random6();">
+                D12
+            </button>
+    
+        </a>
+
+        <a class="random">
+
+            <p class="randomp" id="7">
+    
+            </p>
+    
+            <button id="b" onclick="random7();">
+                D20
+            </button>
+    
+        </a>
+
+        <a class="random">
+
+            <p class="randomp" id="8">
+    
+            </p>
+    
+            <button id="b" onclick="random8();">
+                D100
+            </button>
+    
+        </a>
+
+        <p id="9">
+
+        </p>
+
+        <button onclick="random9();">
+            yes or No ?
+        </button>
+
+        </a>
+
+        <a name="anchor-point3">
+
             <h2 class="personage">
                 Personage
             </h2>
 
         </a>
+
+        
 
         <ul style="list-style-type: none" class="Nom">
 
@@ -212,7 +368,7 @@
 
         </ul>
 
-        <a>
+        <a name="anchor-point4">
             <h2 class="ou">
                 Où ?
             </h2>
@@ -230,7 +386,7 @@
 
         <img class="th" src="image/Thilionde.jpg">
 
-        <a name="anchor-point3">
+        <a name="anchor-point5">
 
              <h2 class="story">
                   Histoire
@@ -355,7 +511,7 @@
             
         </div>
         
-        <a name="anchor-point4">
+        <a name="anchor-point6">
 
             <h2 class="Source">
                     Source 
@@ -380,4 +536,56 @@
         </div>
 
     </body>
+
+    <script>
+
+        function random1() {
+
+            document.getElementById("1").innerHTML=Math.floor(Math.random() * 3+1)
+        }
+
+        function random2() {
+
+            document.getElementById("2").innerHTML=Math.floor(Math.random() * 4+1)
+        }
+
+        function random3() {
+
+            document.getElementById("3").innerHTML=Math.floor(Math.random() * 6+1)
+        }
+
+        function random4() {
+
+            document.getElementById("4").innerHTML=Math.floor(Math.random() * 8+1)
+        }
+
+        function random5() {
+
+            document.getElementById("5").innerHTML=Math.floor(Math.random() * 10+1)
+        }
+
+        function random6() {
+
+            document.getElementById("6").innerHTML=Math.floor(Math.random() * 12+1)
+        }
+
+        function random7() {
+
+            document.getElementById("7").innerHTML=Math.floor(Math.random() * 20+1)
+        }
+
+        function random8() {
+
+            document.getElementById("8").innerHTML=Math.floor(Math.random() * 100+1)
+        }
+
+        function random9() {
+            Math.floor(Math.random() * 1)
+        }
+
+        if ( random9 <0) {
+            document.getElementById("9").innerHTML= 'Yes'
+        }
+    </script>
+
 </html>
