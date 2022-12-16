@@ -8,6 +8,11 @@
     </head>
     <body>
         <style>
+
+            body {
+                background-color: lightgray;
+            }
+
             img {
                 width: 150px;
                 height: 80px;
@@ -106,7 +111,7 @@
             }
 
             .Sessionbutton {
-                
+                margin-left: 0px;
             }
 
             .Sessiontxt {
@@ -123,17 +128,36 @@
             .random {
 
                 display: inline-block;
+                border-radius: 15px;
+                border-color: black;
+                border: solid;
+                border-width: 1px;
+                background-color: lightcoral;
             }
 
             .randomp {
 
-                margin-left: 12px;
+                margin: 25px;
+                border-radius: 100px;
+                font-size: larger;
+                font-family: fantasy;
             }
 
             .rollbutton {
 
-                margin-left: 100px;
+                margin-left: 440px;
+                border-radius: 10px;
+                
             }
+
+            .b {
+                background-image: url(image/dé.png);
+                width: 60px;
+                border-radius: 100px;
+                border-width: 1px;
+            }
+
+            
         </style> 
 
         <div class="h1">
@@ -228,13 +252,24 @@
 
         <a class="rollbutton">
 
+            <a class="random">
+                
+            <p class="randomp" id="0" >
+            </p>
+
+            <button class="b" onclick="random0();" >
+                D2
+             </button>
+    
+        </a>
+
         <a class="random">
 
-            <p class="randomp" id="1">
+            <p class="randomp" id="1" >
 
             </p>
 
-            <button id="b" onclick="random1();">
+            <button class="b" onclick="random1();" >
                 D3
             </button>
 
@@ -246,7 +281,7 @@
     
             </p>
     
-            <button id="b" onclick="random2();">
+            <button class="b" onclick="random2();">
                 D4
             </button>
     
@@ -258,7 +293,7 @@
     
             </p>
     
-            <button id="b" onclick="random3();">
+            <button class="b" onclick="random3();">
                 D6
             </button>
     
@@ -272,7 +307,7 @@
 
             </p>
 
-            <button id="b" onclick="random4();">
+            <button class="b" onclick="random4();">
                 D8
             </button>
 
@@ -284,7 +319,7 @@
     
             </p>
     
-            <button id="b" onclick="random5();">
+            <button class="b" onclick="random5();">
                 D10
             </button>
     
@@ -296,7 +331,7 @@
     
             </p>
     
-            <button id="b" onclick="random6();">
+            <button class="b" onclick="random6();">
                 D12
             </button>
     
@@ -308,7 +343,7 @@
     
             </p>
     
-            <button id="b" onclick="random7();">
+            <button class="b" onclick="random7();">
                 D20
             </button>
     
@@ -320,20 +355,10 @@
     
             </p>
     
-            <button id="b" onclick="random8();">
+            <button class="b" onclick="random8();">
                 D100
             </button>
     
-        </a>
-
-        <p id="9">
-
-        </p>
-
-        <button onclick="random9();">
-            yes or No ?
-        </button>
-
         </a>
 
         <a name="anchor-point3">
@@ -409,6 +434,15 @@
             </button>
 
         </a>
+
+        <a href="#Session3">
+
+            <button class="Sessionbutton">
+                Session 3
+            </button>
+
+        </a>
+
 
         <div>
 
@@ -510,6 +544,47 @@
             </div>    
             
         </div>
+
+        <div>
+
+            <a name="Session3">
+
+                <h3 class="Session">
+                    Session 3
+                </h3>
+
+            </a>
+
+            <div class="Sessiontxt">
+
+                <p>
+                    Dans (village) Shamash commence les discussions diplomatiques alors que EmaUs et Ikea vont ensemble dans un bout du foret ou ils créent un œuf (Conforama) alors que Nyx va récolter des plantes médicinales et trouve une fleure (fleure +1pv Nyx) pendant ce temps Shamash a conclus la discussion politique et leur a donner une image de Dimitri (0 taxe mais récupération de l’or inutiliser et construction d’une petite chapelle). Puis ils partent vers Necra. 
+                </p>
+
+                <p>
+                    Jour 1 : rien mais un brouillard apparait 
+                </p>
+
+                <p>
+                    Jour 2 : combat contre rat 
+                </p>
+
+                <p>
+                    Nuit 2 : transformation de Nyx en vampire. (Angel 20%)
+                </p>
+
+                <p>
+                    Une fois arriver ils remarquent que la ville est morose et qu’il y a des fontaines de sang. Ils découvrent une auberge ouverte ou ils rentrent (après 50 tchec de tout) une fois à l’intérieur un vieil homme les « accueille » et leur donne les clés pour rentrer dans le sous-sol du château. Ils passent le donjon et se retrouvent dans le châteaux et l’aubergiste les rejoint avant de mourir en un coup du vampire. Qui part ne les trouvant pas digne de son regard et un vampire bien plus faible viens les attaquer et meut aux bouts d’un long combat. Avant de mourir il révèle un cercle de téléportation et de temps.  Et Angel étant entre l’intérieur et l’extérieur du cercle Shamash doit choisir de la tirer ou pousser. Il choisit de la tirer.
+                </p>
+
+                <p>
+                    Ils se téléporte et ne vois plus Angel (et l’œuf qui étais avec elle) ils sont téléportés dans une salle sombre ou qu’ils franchisent et ils y découvrent un ancien temple avec des offrandes. En sortant ils retrouvent Angel Luna qui prie pour eux et qui est à 50 % et elle les regarde choquer. Aux bouts d’un moment elle les amène à Dina là ou elle a vécu pendant 1 an. Elle leur donne des chambres et leur raconte un peu sa vie. Avant de ramener Shamash vers un village gobelin croyant aux Dimitrisme.
+                </p>
+
+            </div>
+            
+
+        </div>
         
         <a name="anchor-point6">
 
@@ -538,6 +613,11 @@
     </body>
 
     <script>
+
+        function random0() {
+
+            document.getElementById("0").innerHTML=Math.floor(Math.random() * 2+1)
+        }
 
         function random1() {
 
@@ -579,13 +659,7 @@
             document.getElementById("8").innerHTML=Math.floor(Math.random() * 100+1)
         }
 
-        function random9() {
-            Math.floor(Math.random() * 1)
-        }
 
-        if ( random9 <0) {
-            document.getElementById("9").innerHTML= 'Yes'
-        }
     </script>
 
 </html>
